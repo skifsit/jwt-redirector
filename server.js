@@ -11,7 +11,7 @@ const requestHandler = (req, res) => {
     res.setHeader('Content-Type', 'image/x-icon; binary');
     return res.end(favicon);
   }
-  if (req.url === '/bundle.js') {
+  if (req.url === 'dist/bundle.js') {
     res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
     return res.end(bundleJS);
   }
