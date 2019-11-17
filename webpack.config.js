@@ -3,6 +3,7 @@ const path = require('path'); // eslint-disable-line @typescript-eslint/no-var-r
 module.exports = {
   mode: 'development',
   entry: './src/index.ts',
+  devtool: '',
   module: {
     rules: [
       {
