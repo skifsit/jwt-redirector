@@ -26,8 +26,7 @@ try {
     }
     const { protocol, host, port, path } = decoded.redirect;
     const url = `${protocol ? protocol : ''}${host}${port ? `:${port}` : ''}${path ? path : ''}?jwt=${jwt}`;
-    console.log(url);
-    // window.location.replace(url);
+    window.location.replace(url);
   } else {
     throw new Error('Decoded JWT is not an object!');
   }
